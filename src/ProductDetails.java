@@ -1,6 +1,8 @@
+import java.util.Scanner;
+
 public class ProductDetails {
 
-    private double calories;
+    private int calories;
     private double fat;
     private double satFat;
     private double carbs;
@@ -9,7 +11,7 @@ public class ProductDetails {
     private double protein;
     private double salt;
 
-    public ProductDetails(double calories, double fat, double satFat, double carbs, double sugars, double fibre, double protein, double salt) {
+    public ProductDetails(int calories, double fat, double satFat, double carbs, double sugars, double fibre, double protein, double salt) {
         this.calories = calories;
         this.fat = fat;
         this.satFat = satFat;
