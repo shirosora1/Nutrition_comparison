@@ -6,17 +6,21 @@ public class Main {
 
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Please enter details for product one: ");
+        System.out.println("Please enter details for products to compare: ");
+        System.out.println();
 
-        int index = 0;
+        // Creating food items from scanner input
 
-        while (index < 2) {
-            System.out.print("Name: ");
-            System.out.print("Serving size: ");
+        // first product
 
-            Food firstProduct = new Food(scanner.nextLine(), scanner.nextInt());
+        System.out.print("Enter the name of product one: ");
+        String name = scanner.nextLine();
+        System.out.print("Serving size in grams: ");
+        int servingSize = scanner.nextInt();
 
-            System.out.println(firstProduct);
-        }
+        Food firstProduct = new Food(name, servingSize);
+        System.out.println();
+        System.out.println(firstProduct.getDetails());
+
     }
 }
