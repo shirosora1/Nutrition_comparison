@@ -3,69 +3,27 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-
         Scanner scanner = new Scanner(System.in);
+        System.out.println("Please enter details for products to compare:");
 
-        System.out.println("Please enter details for products to compare: ");
+    // First product
+        System.out.println("First product details (per 100g): ");
+        Food firstProduct = ProductInputHandler.getFoodInput(scanner);
+        ProductDetails firstProductDetails = ProductInputHandler.getProductDetails(scanner);
+
         System.out.println();
+    // Second product
+        System.out.println("Second product details (per 100g): ");
+        Food secondProduct = ProductInputHandler.getFoodInput(scanner);
+        ProductDetails secondProductDetails = ProductInputHandler.getProductDetails(scanner);
 
-        // Creating food items from scanner input
+        System.out.println();
+        System.out.println("First product: ");
+        System.out.println(firstProduct.getDetails());
+        System.out.println(firstProductDetails.getNutritionalInfo());
 
-        // first product
-
-        Food firstProduct = null;
-        ProductDetails firstProductDetails = null;
-        Food secondProduct = null;
-        ProductDetails secondProductDetails = null;
-
-        for (int i = 1; i <= 2; i++) {
-
-            if (i == 1) {
-                System.out.println("First product details (per 100g): ");
-            } else if (i == 2){
-                System.out.println("Second product details (per 100g): ");
-            }
-
-            System.out.print("Enter product name: ");
-            String name = scanner.nextLine();
-
-            System.out.print("Enter calories: ");
-            int calories = scanner.nextInt();
-
-            System.out.print("Enter fat: ");
-            double fat = scanner.nextDouble();
-
-            System.out.print("Enter sat fat: ");
-            double satFat = scanner.nextDouble();
-
-            System.out.print("Enter carbs: ");
-            double carbs = scanner.nextDouble();
-
-            System.out.print("Enter sugars: ");
-            double sugars = scanner.nextDouble();
-
-            System.out.print("Enter fibre: ");
-            double fibre = scanner.nextDouble();
-
-            System.out.print("Enter protein: ");
-            double protein = scanner.nextDouble();
-
-            System.out.print("Enter salt: ");
-            double salt = scanner.nextDouble();
-
-            System.out.print("Enter individual serving size: ");
-            int servingSize = scanner.nextInt();
-
-            scanner.nextLine();
-            System.out.println();
-
-            if (i == 1) {
-                firstProduct = new Food(name, servingSize);
-                firstProductDetails = new ProductDetails(calories, fat, satFat, carbs, sugars, fibre, protein, salt);
-            } else if (i == 2) {
-                secondProduct = new Food(name, servingSize);
-                secondProductDetails = new ProductDetails(calories, fat, satFat, carbs, sugars, fibre, protein, salt);
-            }
-        }
+        System.out.println("Second product: ");
+        System.out.println(secondProduct.getDetails());
+        System.out.println(secondProductDetails.getNutritionalInfo());
     }
 }

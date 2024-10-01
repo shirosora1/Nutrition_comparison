@@ -21,4 +21,15 @@ public class ProductDetails {
         this.protein = protein;
         this.salt = salt;
     }
+
+    public String getNutritionalInfo() {
+        return "Calories: " + calories + " kcal\n" +
+                "Fat: " + fat + "g\n" +
+                "of which Saturates: " + satFat + "g\n" +
+                "Carbs " + carbs + "g\n" +
+                "of which Sugars: " + sugars + "g\n" +
+                "Fibre: " + fibre + "g\n" +
+                "Protein: " + protein + "g\n" +
+                "Salt: " + salt + "g\n";
+    }
 }
