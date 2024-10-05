@@ -8,11 +8,6 @@ public class Food {
         this.name = name;
         this.servingSize = servingSize;
     }
-
-    public String getName() {
-        return name;
-    }
-
     public String getDetails() {
         return name + ", \n" + servingSize + "g per serving";
     }
