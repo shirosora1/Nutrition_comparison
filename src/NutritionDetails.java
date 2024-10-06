@@ -1,6 +1,4 @@
-import java.util.Scanner;
-
-public class ProductDetails {
+public class NutritionDetails {
 
     private int calories;
     private double fat;
@@ -11,7 +9,7 @@ public class ProductDetails {
     private double protein;
     private double salt;
 
-    public ProductDetails(int calories, double fat, double satFat, double carbs, double sugars, double fibre, double protein, double salt) {
+    public NutritionDetails(int calories, double fat, double satFat, double carbs, double sugars, double fibre, double protein, double salt) {
         this.setCalories(calories);
         this.setFat(fat);
         this.setSatFat(satFat);
@@ -21,6 +19,8 @@ public class ProductDetails {
         this.setProtein(protein);
         this.setSalt(salt);
     }
+
+    // Getters
 
     public String getNutritionalInfo() {
         return "Calories: " + calories + " kcal\n" +
@@ -32,6 +32,40 @@ public class ProductDetails {
                 "Protein: " + protein + "g\n" +
                 "Salt: " + salt + "g\n";
     }
+
+    public int getCalories() {
+        return calories;
+    }
+
+    public double getFat() {
+        return fat;
+    }
+
+    public double getSatFat() {
+        return satFat;
+    }
+
+    public double getCarbs() {
+        return carbs;
+    }
+
+    public double getSugars() {
+        return sugars;
+    }
+
+    public double getFibre() {
+        return fibre;
+    }
+
+    public double getProtein() {
+        return protein;
+    }
+
+    public double getSalt() {
+        return salt;
+    }
+
+    // Setters
 
     public void setCalories(int calories) {
         this.calories = calories;

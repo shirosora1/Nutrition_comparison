@@ -9,13 +9,13 @@ public class Main {
     // First product
         System.out.println("First product details (per 100g): ");
         Food firstProduct = ProductInputHandler.getFoodInput(scanner);
-        ProductDetails firstProductDetails = ProductInputHandler.getProductDetails(scanner);
+        NutritionDetails firstProductDetails = ProductInputHandler.getProductDetails(scanner);
 
         System.out.println();
     // Second product
         System.out.println("Second product details (per 100g): ");
         Food secondProduct = ProductInputHandler.getFoodInput(scanner);
-        ProductDetails secondProductDetails = ProductInputHandler.getProductDetails(scanner);
+        NutritionDetails secondProductDetails = ProductInputHandler.getProductDetails(scanner);
 
         System.out.println();
         System.out.println("First product: ");

@@ -13,7 +13,7 @@ public class ProductInputHandler {
         return new Food(name, servingSize);
     }
 
-    public static ProductDetails getProductDetails(Scanner scanner) {
+    public static NutritionDetails getProductDetails(Scanner scanner) {
         System.out.print("Enter calories: ");
         int calories = scanner.nextInt();
 
@@ -39,6 +39,6 @@ public class ProductInputHandler {
         double salt = scanner.nextDouble();
 
         scanner.nextLine();
-        return new ProductDetails(calories, fat, satFat, carbs, sugars, fibre, protein, salt);
+        return new NutritionDetails(calories, fat, satFat, carbs, sugars, fibre, protein, salt);
     }
 }
