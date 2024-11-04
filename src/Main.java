@@ -4,15 +4,14 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Please enter details for products to compare:");
 
     // First product
-        System.out.println("First product details (per 100g): ");
+        System.out.println("Enter First product details - ");
         Food firstProduct = ProductInputHandler.getFoodInput(scanner);
         NutritionDetails firstProductDetails = ProductInputHandler.getProductDetails(scanner);
-        
+
     // Second product
-        System.out.println("Second product details (per 100g): ");
+        System.out.println("Enter Second product details - ");
         Food secondProduct = ProductInputHandler.getFoodInput(scanner);
         NutritionDetails secondProductDetails = ProductInputHandler.getProductDetails(scanner);
 

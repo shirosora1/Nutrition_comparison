@@ -3,10 +3,10 @@ import java.util.Scanner;
 public class ProductInputHandler {
 
     public static Food getFoodInput(Scanner scanner) {
-        System.out.print("Enter product name: ");
+        System.out.print("Product name: ");
         String name = scanner.nextLine();
 
-        System.out.print("Enter individual serving size: ");
+        System.out.print("Individual serving size: ");
         int servingSize = scanner.nextInt();
         scanner.nextLine();
 
@@ -15,7 +15,8 @@ public class ProductInputHandler {
 
     // Get nutritional values per 100g from the user
     public static NutritionDetails getProductDetails(Scanner scanner) {
-
+        System.out.println();
+        System.out.println("Please enter details (per 100g):");
         System.out.print("Enter calories: ");
         int calories = scanner.nextInt();
 
