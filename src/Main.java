@@ -10,8 +10,7 @@ public class Main {
         System.out.println("First product details (per 100g): ");
         Food firstProduct = ProductInputHandler.getFoodInput(scanner);
         NutritionDetails firstProductDetails = ProductInputHandler.getProductDetails(scanner);
-
-        System.out.println();
+        
     // Second product
         System.out.println("Second product details (per 100g): ");
         Food secondProduct = ProductInputHandler.getFoodInput(scanner);
