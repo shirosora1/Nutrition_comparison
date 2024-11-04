@@ -33,38 +33,6 @@ public class NutritionDetails {
                 "Salt: " + salt + "g\n";
     }
 
-    public int getCalories() {
-        return calories;
-    }
-
-    public double getFat() {
-        return fat;
-    }
-
-    public double getSatFat() {
-        return satFat;
-    }
-
-    public double getCarbs() {
-        return carbs;
-    }
-
-    public double getSugars() {
-        return sugars;
-    }
-
-    public double getFibre() {
-        return fibre;
-    }
-
-    public double getProtein() {
-        return protein;
-    }
-
-    public double getSalt() {
-        return salt;
-    }
-
     // Setters
 
     public void setCalories(int calories) {
