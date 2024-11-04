@@ -10,8 +10,6 @@ public class ProductInputHandler {
         int servingSize = scanner.nextInt();
         scanner.nextLine();
 
-        // NutritionDetails nutritionDetails = getProductDetails(scanner);
-
         return new Food(name, servingSize); //, nutritionDetails);
     }
 
