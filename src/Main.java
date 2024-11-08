@@ -8,20 +8,20 @@ public class Main {
     // First product
         System.out.println("Enter First product details - ");
         Food firstProduct = ProductInputHandler.getFoodInput(scanner);
-        NutritionDetails firstProductDetails = ProductInputHandler.getProductDetails(scanner);
+
 
     // Second product
         System.out.println("Enter Second product details - ");
         Food secondProduct = ProductInputHandler.getFoodInput(scanner);
-        NutritionDetails secondProductDetails = ProductInputHandler.getProductDetails(scanner);
+
 
         System.out.println();
         System.out.println("First product: ");
         System.out.println(firstProduct.getDetails());
-        System.out.println(firstProductDetails.getNutritionalInfo());
+
 
         System.out.println("Second product: ");
         System.out.println(secondProduct.getDetails());
-        System.out.println(secondProductDetails.getNutritionalInfo());
+
     }
 }

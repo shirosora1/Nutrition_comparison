@@ -10,7 +10,9 @@ public class ProductInputHandler {
         int servingSize = scanner.nextInt();
         scanner.nextLine();
 
-        return new Food(name, servingSize); //, nutritionDetails);
+        NutritionDetails nutritionDetails = getProductDetails(scanner);
+
+        return new Food(name, servingSize, nutritionDetails);
     }
 
     // Get nutritional values per 100g from the user
